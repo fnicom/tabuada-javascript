@@ -65,9 +65,21 @@ section .output {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    /* margin: auto; */
+    margin-bottom: 10%;
+  }
   section {
     width: 85%;
-    height: 270px;
+    height: 220px;
     background: #845ec2;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -99,9 +111,9 @@ section .output {
     margin-top: 5%;
   }
   section .number input {
-    width: 40px;
-    height: 30px;
-    font-size: 30px;
+    width: 65px;
+    height: 45px;
+    font-size: 25px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
