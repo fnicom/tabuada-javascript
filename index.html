@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contador</title>
+  </head>
+  <body>
+    <section>
+      <div class="number">
+        <div class="btn-numero">
+          <input type="number" id="numero" value="" />
+        </div>
+        <div class="acressimo">
+          <button type="button" id="btnSoma" onclick="tabuada()">
+            Mostrar tabuada
+          </button>
+        </div>
+        <div class="decrecimo">
+          <button type="reset" id="btnSub" value="reset" onclick="limpar()">
+            Limpar
+          </button>
+        </div>
+      </div>
+      <div class="result">
+        <div class="output" id="output"></div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
