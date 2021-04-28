@@ -1,14 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Zen Dots", cursive;
+}
+
+html {
+  background: -webkit-gradient(linear, left bottom, right top, from(#d16ba5), color-stop(#c777b9), color-stop(#ba83ca), color-stop(#aa8fd8), color-stop(#9a9ae1), color-stop(#8aa7ec), color-stop(#79b3f4), color-stop(#69bff8), color-stop(#52cffe), color-stop(#41dfff), color-stop(#46eefa), to(#5ffbf1));
+  background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
 section {
   width: 25%;
   height: 200px;
-  background: #1f618d;
+  background: #845ec2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,6 +28,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
+  border-radius: 10px;
 }
 
 section .number {
@@ -52,11 +60,15 @@ section .number .decrecimo button {
   color: #fff;
 }
 
+section .output {
+  color: #fff;
+}
+
 @media only screen and (max-width: 768px) {
   section {
-    width: 60%;
-    height: 500px;
-    background: #1f618d;
+    width: 85%;
+    height: 270px;
+    background: #845ec2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -96,6 +108,18 @@ section .number .decrecimo button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  section .number .acressimo button {
+    background: greenyellow;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+  }
+  section .number .decrecimo button {
+    border-radius: 20px;
+    width: 90px;
+    height: 35px;
+    color: #fff;
   }
   section .output {
     color: #fff;
